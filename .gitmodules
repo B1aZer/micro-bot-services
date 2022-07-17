@@ -10,3 +10,12 @@
 [submodule "bot-discord"]
 	path = bot-discord
 	url = git@github.com:B1aZer/micro-bot-services-discord-bot.git
+[submodule "database-mongo"]
+	path = database-mongo
+	url = git@github.com:B1aZer/micro-bot-services-database-mongo.git
+[submodule "landing-bootstrap-front"]
+	path = landing-bootstrap-front
+	url = git@github.com:B1aZer/micro-bot-services-landing-web-front.git
+[submodule "landing-cave-of-wonders-back"]
+	path = landing-cave-of-wonders-back
+	url = git@github.com:B1aZer/micro-bot-services-landing-web-back.git
