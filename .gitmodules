@@ -1,0 +1,3 @@
+[submodule "twitter_followers"]
+	path = twitter_followers
+	url = git@github.com:B1aZer/tw-analytics.git
