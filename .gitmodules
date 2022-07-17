@@ -31,3 +31,6 @@
 [submodule "twitter"]
 	path = twitter
 	url = git@github.com:B1aZer/micro-bot-services-twitter-bot.git
+[submodule "_airflow"]
+	path = _airflow
+	url = git@github.com:B1aZer/micro-bot-services-airflow.git
