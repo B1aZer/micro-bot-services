@@ -1,0 +1,4 @@
+{
+    "solidity.packageDefaultDependenciesContractsDirectory": "",
+    "solidity.packageDefaultDependenciesDirectory": "backend-ethereum/node_modules",
+}
