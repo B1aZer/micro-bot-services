@@ -19,3 +19,15 @@
 [submodule "landing-cave-of-wonders-back"]
 	path = landing-cave-of-wonders-back
 	url = git@github.com:B1aZer/micro-bot-services-landing-web-back.git
+[submodule "nft-scraper"]
+	path = nft-scraper
+	url = git@github.com:B1aZer/micro-bot-services-nft-scraper.git
+[submodule "opensea-monitor"]
+	path = opensea-monitor
+	url = git@github.com:B1aZer/micro-bot-services-opensea-monitor.git
+[submodule "reddit-praw"]
+	path = reddit-praw
+	url = git@github.com:B1aZer/micro-bot-services-reddit-praw.git
+[submodule "twitter"]
+	path = twitter
+	url = git@github.com:B1aZer/micro-bot-services-twitter-bot.git
