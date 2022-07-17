@@ -4,3 +4,9 @@
 [submodule "_utils"]
 	path = _utils
 	url = git@github.com:B1aZer/micro-bot-services-utils.git
+[submodule "backend-ethereum"]
+	path = backend-ethereum
+	url = git@github.com:B1aZer/micro-bot-services-backend.git
+[submodule "bot-discord"]
+	path = bot-discord
+	url = git@github.com:B1aZer/micro-bot-services-discord-bot.git
