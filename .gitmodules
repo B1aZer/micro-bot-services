@@ -1,3 +1,6 @@
 [submodule "twitter_followers"]
 	path = twitter_followers
 	url = git@github.com:B1aZer/tw-analytics.git
+[submodule "_utils"]
+	path = _utils
+	url = git@github.com:B1aZer/micro-bot-services-utils.git
