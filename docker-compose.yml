@@ -1,0 +1,60 @@
+version: '3.8'
+services:
+  logger:
+    build: _utils
+    ports:
+      - 3044:3044
+    command: "node server-logger.js"
+  twitter:
+    build: twitter
+    ports:
+      - 3022:3022
+    depends_on:
+      - logger
+    volumes:
+      - ./_utils:/_utils
+    command: "node server.js"
+  opensea-monitor:
+    build: opensea-monitor
+    ports:
+      - 3080:3080
+    depends_on:
+      - logger
+      - twitter
+    volumes:
+      - ./_utils:/_utils
+    command: "node app.js"
+  database-mongo:
+    build: database-mongo
+    ports:
+      - 3011:3011
+    depends_on:
+      - logger
+      - twitter
+      - opensea-monitor
+    command: "node app.js"
+  reddit-praw:
+    build: reddit-praw
+    ports:
+      - 3031:3031
+    depends_on:
+      - logger
+      - twitter
+      - opensea-monitor
+      - database-mongo
+    command: "python handler.py"
+  bot-discord:
+    build: bot-discord
+    depends_on:
+      - logger
+      - twitter
+      - opensea-monitor
+      - database-mongo
+      - reddit-praw
+    volumes:
+      - ./_utils:/_utils
+    environment:
+      - OPENSEA_URL=$OPENSEA_URL
+      - MONGODB_URL=$MONGODB_URL
+      - REDDIT_URL=$REDDIT_URL
+    command: "node bot.js"
