@@ -5,8 +5,8 @@ pipeline {
     }
     stages {
         stage('Build') {
-            steps {
-                echo 'go..'
+            script {
+                echo 'go!'
             }
         }
         stage('Test') {
@@ -16,7 +16,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                script {
+                    sh 'docker-compose up -d'
+                }
             }
         }
     }
