@@ -43,6 +43,15 @@ services:
       - opensea-monitor
       - database-mongo
     command: "python handler.py"
+  flask:
+    build: landing-cave-of-wonders-back
+    depends_on:
+      - database-mongo
+    ports:
+      - 5000:5000
+    volumes:
+      - ./landing-bootstrap-front:/landing-bootstrap-front
+    command: "./start.sh"
   bot-discord:
     build: bot-discord
     depends_on:
