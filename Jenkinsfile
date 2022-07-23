@@ -5,7 +5,7 @@ pipeline {
     }
     stages {
         stage('Build') {
-            script {
+            steps {
                 echo 'go!'
             }
         }
