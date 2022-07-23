@@ -6,7 +6,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'go!'
+                sh '''
+                    docker verion
+                    docker-compose version
+                '''
             }
         }
         stage('Test') {
