@@ -1,7 +1,4 @@
 pipeline {
-    agent {
-        docker { image 'docker:latest' }
-    }
     triggers {
         githubPush()
     }
