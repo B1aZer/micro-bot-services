@@ -10,6 +10,8 @@ pipeline {
                 sh 'ls -la'
                 sh '''
                     pwd
+                    cd /home
+                    whoami
                     ssh -v
                 '''
             }
