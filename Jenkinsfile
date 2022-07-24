@@ -11,8 +11,7 @@ pipeline {
                 checkout scm
                 sh 'ls -la'
                 sh '''
-                    docker verion
-                    docker-compose version
+                    ssh -v
                 '''
             }
         }
