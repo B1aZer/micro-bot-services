@@ -13,7 +13,7 @@ pipeline {
                     cd /home/terraform
                     pwd
                     whoami
-                    ssh -v
+                    ssh terraform@3.80.214.242 -i tf-packer ./dockerRun.sh
                 '''
             }
         }
