@@ -9,6 +9,7 @@ pipeline {
                 checkout scm
                 sh 'ls -la'
                 sh '''
+                    pwd
                     ssh -v
                 '''
             }
