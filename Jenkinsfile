@@ -11,8 +11,6 @@ pipeline {
                 sh '''
                     pwd
                     cd /home/terraform
-                    pwd
-                    whoami
                     ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null terraform@3.80.214.242 -i ./tf-packer ./dockerRun.sh
                 '''
             }
