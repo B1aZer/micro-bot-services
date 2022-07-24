@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'docker:latest' }
+    }
     triggers {
         githubPush()
     }
@@ -8,6 +10,10 @@ pipeline {
             steps {
                 checkout scm
                 sh 'ls -la'
+                sh '''
+                    docker verion
+                    docker-compose version
+                '''
             }
         }
         stage('Test') {
