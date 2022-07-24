@@ -10,7 +10,8 @@ pipeline {
                 sh 'ls -la'
                 sh '''
                     pwd
-                    cd /home
+                    cd /home/terraform
+                    pwd
                     whoami
                     ssh -v
                 '''
