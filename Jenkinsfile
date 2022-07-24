@@ -7,17 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 checkout scm
-            }
-            steps {
-                script {
-                    sh 'ls -la'
-                }
-            }
-            steps {
-                sh '''
-                    docker verion
-                    docker-compose version
-                '''
+                sh 'ls -la'
             }
         }
         stage('Test') {
