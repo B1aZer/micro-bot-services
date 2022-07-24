@@ -1,36 +1,36 @@
 [submodule "twitter_followers"]
 	path = twitter_followers
-	url = git@github.com:B1aZer/tw-analytics.git
+	url = ../tw-analytics.git
 [submodule "_utils"]
 	path = _utils
-	url = git@github.com:B1aZer/micro-bot-services-utils.git
+	url = ../micro-bot-services-utils.git
 [submodule "backend-ethereum"]
 	path = backend-ethereum
-	url = git@github.com:B1aZer/micro-bot-services-backend.git
+	url = ../micro-bot-services-backend.git
 [submodule "bot-discord"]
 	path = bot-discord
-	url = git@github.com:B1aZer/micro-bot-services-discord-bot.git
+	url = ../micro-bot-services-discord-bot.git
 [submodule "database-mongo"]
 	path = database-mongo
-	url = git@github.com:B1aZer/micro-bot-services-database-mongo.git
+	url = ../micro-bot-services-database-mongo.git
 [submodule "landing-bootstrap-front"]
 	path = landing-bootstrap-front
-	url = git@github.com:B1aZer/micro-bot-services-landing-web-front.git
+	url = ../micro-bot-services-landing-web-front.git
 [submodule "landing-cave-of-wonders-back"]
 	path = landing-cave-of-wonders-back
-	url = git@github.com:B1aZer/micro-bot-services-landing-web-back.git
+	url = ../micro-bot-services-landing-web-back.git
 [submodule "nft-scraper"]
 	path = nft-scraper
-	url = git@github.com:B1aZer/micro-bot-services-nft-scraper.git
+	url = ../micro-bot-services-nft-scraper.git
 [submodule "opensea-monitor"]
 	path = opensea-monitor
-	url = git@github.com:B1aZer/micro-bot-services-opensea-monitor.git
+	url = ../micro-bot-services-opensea-monitor.git
 [submodule "reddit-praw"]
 	path = reddit-praw
-	url = git@github.com:B1aZer/micro-bot-services-reddit-praw.git
+	url = ../micro-bot-services-reddit-praw.git
 [submodule "twitter"]
 	path = twitter
-	url = git@github.com:B1aZer/micro-bot-services-twitter-bot.git
+	url = ../micro-bot-services-twitter-bot.git
 [submodule "_airflow"]
 	path = _airflow
-	url = git@github.com:B1aZer/micro-bot-services-airflow.git
+	url = ../micro-bot-services-airflow.git
